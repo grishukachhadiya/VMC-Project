@@ -1,3 +1,12 @@
+<?php
+
+if (!session_id()) session_start();
+if (!$_SESSION['login']){ 
+    header("Location:index.php");
+    die();
+}
+?>
+
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
     <link rel="stylesheet" href="css/fullcalendar.css"/>
